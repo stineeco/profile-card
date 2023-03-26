@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+   
+}
+
+
+body{
+    background: hsl(185, 75%, 39%);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.top_bg{
+    position: absolute;
+    background: url(bg-pattern-top.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 978px;
+    width: 978px;
+    top: -528px;
+    left:-264px ;
+}
+
+.bottom_bg{
+    height: 978px;
+    width: 978px;
+    right:-250px ;
+    bottom: -570px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background: url(bg-pattern-bottom.svg);
+}
+
+
+.card{
+    background: white;
+    height: 376px;
+    width: 350px;
+    border-radius: 20px;
+  
+    position: relative;
+}
+
+.card .bg_img{
+    height: 142px;
+    border-radius: 20px 20px 0 0;
+    background: url(bg-pattern-card.svg);
+
+}
+
+
+.profile .pic img{
+    top: 88px;
+    left: 50%;
+    border-radius: 50%;
+    padding: 5px;
+    background: white;
+    position: absolute;
+    transform: translate(-50%);
+
+}
+
+.profile_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 74px;
+}
+
+
+.profile{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 0.5px solid hsl(227, 10%, 46%);
+}
+
+
+.profile .name{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: hsl(227, 10%, 46%);
+
+}
+
+.profile .name span{
+    font-weight: 700;
+    color:  hsl(229, 23%, 23%);
+   
+}
+
+.profile .location{
+    color:hsl(227, 10%, 46%) ;
+}
+
+.stats{
+    width: 100%;
+    display: flex;
+    padding-top: 23px;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.stats .number{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    color:  hsl(229, 23%, 23%);
+    
+}
+
+.stats .text{
+    color: hsl(227, 10%, 46%);
+}
+
+
+@media (min-width:200px)and (max-width:500px ){
+    .top_bg{
+        height: 545px;
+        width: 470px;
+        top:-160px ;
+        left: -250px;
+    }
+
+
+    .bottom_bg{
+        height: 540px;
+        width: 390px;
+        bottom:-79px ;
+        right: -160px;
+    }
+}
+
+
